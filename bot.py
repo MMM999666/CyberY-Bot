@@ -7,7 +7,7 @@ import tweepy
 
 load_dotenv()
 
-# X API credentials
+# X API credentials (van het aparte account waarmee je wilt posten)
 client = tweepy.Client(
     bearer_token=os.getenv("BEARER_TOKEN"),
     consumer_key=os.getenv("API_KEY"),
@@ -17,11 +17,11 @@ client = tweepy.Client(
 )
 
 tips = [
-    "🔒 Tip: Gebruik een wachtwoordmanager. Unieke wachtwoorden per site = veel veiliger. #CyberY #CyberSecurity",
-    "🎄 Kerst-tip: Let op phishing-mails over cadeaus of leveringen. Klik niet zomaar op links! #CyberY",
-    "🛡️ Update je software altijd. Veel aanvallen gebruiken oude kwetsbaarheden. #CyberSecurity #CyberY",
-    "📱 Schakel 2FA in overal waar het kan. Dit stopt de meeste account-overnames. #CyberY",
-    "🎁 Veilige feestdagen gewenst! Deel geen persoonlijke info op social media over waar je bent. #CyberY"
+    "🔒 Tip: Gebruik een wachtwoordmanager. Unieke wachtwoorden per site = veel veiliger. @Melialset #CyberY #CyberSecurity",
+    "🎄 Kerst-tip: Let op phishing-mails over cadeaus of leveringen. Klik niet zomaar op links! @Melialset #CyberY",
+    "🛡️ Update je software altijd. Veel aanvallen gebruiken oude kwetsbaarheden. @Melialset #CyberSecurity #CyberY",
+    "📱 Schakel 2FA in overal waar het kan. Dit stopt de meeste account-overnames. @Melialset #CyberY",
+    "🎁 Veilige feestdagen gewenst! Deel geen persoonlijke info op social media over waar je bent. @Melialset #CyberY"
 ]
 
 def post_tip():
